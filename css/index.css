@@ -43,18 +43,21 @@
   grid-template-columns: repeat(4,1fr);
   justify-self: end;
   width: 17%;
-  height: 50px;
+  height: 45px;
   margin-right: 10px;
 }
 .topBlockContainer span{
-  margin-top: 7px;
   align-self: center;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: bold;
   padding: 5px 10px;
+  cursor: pointer;
+}
+.topBlockContainer span:hover{
+  text-decoration: underline;
 }
 .topBlockContainer img{
-  margin-top: 7px;
   width: 20px;
   align-self: center;
 }
@@ -228,11 +231,11 @@
 }
 /* start shop block section */
 .shopBlock{
-  margin-top: 45%;
+  margin: 40% 5% 0 2%;
 }
 .shopBlock .firstWrapper{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
 }
 .firstWrapper .blockWithText{
   font-size: 24px;
@@ -260,14 +263,16 @@
   justify-self: center;
   align-self: center;
   cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
 }
 .firstWrapper .bootsBlock span:hover{
   border-bottom: 2px solid black;
 }
 .shopBlock .secondWrapper{
-  margin-top: 70px;
+  margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(208px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
 }
 .secondWrapper .blockWithText{
   font-size: 24px;
@@ -295,6 +300,8 @@
   justify-self: center;
   align-self: center;
   cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
 }
 .secondWrapper .dressBlock span:hover{
   border-bottom: 2px solid black;
@@ -319,9 +326,9 @@
 .teamPeakBlock .wrapperForDwightHoward{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
 }
 .teamPeakBlock .dwightHoward{
-  margin-top: 15px;
   text-align: center;
 }
 .teamPeakBlock .dwightHoward img{
@@ -336,7 +343,6 @@
 }
 .teamPeakBlock .dh2{
   text-align: center;
-  margin-top: 15px;
 }
 .teamPeakBlock .dh2 img{
   width: 100%;
@@ -354,7 +360,7 @@
 }
 .teamPeakBlock .tonyParker{
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .teamPeakBlock .tonyParker img{
   width: 100%;
@@ -368,7 +374,7 @@
 }
 .teamPeakBlock .tp4{
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .teamPeakBlock .tp4 img{
   width: 100%;
@@ -386,7 +392,7 @@
 }
 .teamPeakBlock .georgeHill{
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .teamPeakBlock .georgeHill img{
   width: 100%;
@@ -400,7 +406,7 @@
 }
 .teamPeakBlock .peakMonster{
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .teamPeakBlock .peakMonster img{
   width: 100%;
@@ -414,7 +420,7 @@
 }
 .teamPeakBlock .peakEssentials{
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .teamPeakBlock .peakEssentials img{
   width: 100%;
@@ -432,7 +438,7 @@
 }
 .teamPeakBlock .teamOrder{
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .teamPeakBlock .teamOrder img{
   width: 100%;
@@ -446,7 +452,7 @@
 }
 .teamPeakBlock .media{
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .teamPeakBlock .media img{
   width: 100%;
@@ -458,80 +464,52 @@
   cursor: pointer;
   text-transform: uppercase;
 }
+/* START FOOTER SECTION */
 .footer{
-  margin-top: 40px;
+  margin-top: 30px;
   background: #222;
 }
 .footer .topBlock{
+  display: grid;
+  height: 250px;
   padding-top: 40px;
-  padding-right: 7%;
-  padding-left: 7%;
-  height: 280px;
+  margin-right: 7%;
+  margin-left: 7%;
   background: #222;
-  display: grid;
-  grid-template-columns: 15% 1fr 1fr 1fr 2fr;
   grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  grid-template-rows: auto;
 }
-.footer .peakSport{
+.footer .topBlock div{
   display: grid;
-  height: 76%;
 }
-.footer .shopPeak{
-  display: grid;
+.footer .topBlock div:nth-child(1){
   height: 80%;
 }
-.footer .ourAthletes{
+.footer .topBlock div:nth-child(2){
+  height: 80%;
+}
+.footer .topBlock div:nth-child(3){
+  height: 90%;
+}
+.footer .topBlock div:nth-child(4){
+  height: 30%;
+}
+.footer .topBlock div:nth-child(5){
   display: grid;
-  height: 25%;
-}
-.footer .updatesAndOffers{
-  display: grid;
-  grid-template-columns: 1fr ;
-  grid-template-rows: 1fr 1fr 2fr;
-  /* height: 25%; */
-}
-.footer .updatesAndOffers .blockMail{
-  width: 100%;
-}
-.footer span{
-  color: #666;
-  font-size: 13px;
+  height: 70%;
 }
 .footer .title{
   font-size: 17px;
   text-transform: uppercase;
   color: #a9a9a9;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.6px;
   font-weight: bold;
-}
-.footer  .email{
-  /* margin-top: 15px; */
-  width: 220px;
-  height: 30px;
-  padding-left: 5px;
-  border: none;
-  font-size: 16px;
-  color: #a9a9a9;
-  outline: 0!important;
-}
-.footer  .sub{
-  height: 30px;
-  width: 110px;
-  border: none;
-  font-size: 14px;
-  background: #4e4e4e;
-  color: #fff;
-  margin-left: -10px;
-  text-transform: uppercase;
-  outline: 0!important;
-}
-.footer .sub:hover{
-  background: #bf0d19;
-  transition: 0.7s ease;
 }
 .footer .bottomBlock{
   text-align: center;
-  padding-top: 20px;
+  padding: 17px;
+  margin-top: 20px;
   margin-right: 8%;
   margin-left: 8%;
   height: 40px;
@@ -544,7 +522,38 @@
   font-size: 14px;
   transition: 0.6s ease;
 }
-
+.footer .blockMail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer .email{
+  width: 220px;
+  height: 30px;
+  padding-left: 5px;
+  border: none;
+  font-size: 0.8em;
+  color: #a9a9a9;
+  outline: 0!important;
+}
+.footer  .sub{
+  height: 30px;
+  width: 110px;
+  border: none;
+  font-size: 0.8em;
+  background: #4e4e4e;
+  color: #fff;
+  margin-left: -20px;
+  text-transform: uppercase;
+  outline: 0!important;
+}
+.footer .sub:hover{
+  background: #bf0d19;
+  transition: 0.7s ease;
+}
+.footer span{
+  color: #666;
+  font-size: 13px;
+}
 @media(max-width: 1125px){
   .topBlock .topBlockContainer{
     width: 21%;
@@ -555,33 +564,48 @@
   .underHeadMenu .buttonsForClick .back{
     margin-right: 50%;
   }
-  .shopBlock .firstWrapper{
-    display: grid;
-    grid-gap: 15px;
-  }
   .shopBlock .firstWrapper .blockWithText {
-    grid-column-start: 1;
-    grid-column-end: -1;
-    margin-top: -5%;
+    grid-column: 1/-1;
+    margin-bottom: 50px;
+    margin-top: -10px;
   }
-  .footer .updatesAndOffers .blockMail .email{
-    width: 60%;
-    font-size: 0.9em;
-  }
-  .footer .updatesAndOffers .blockMail .sub{
-    width: 40%;
-  }
-  .shopBlock .firstWrapper .bootsBlock{
+  .shopBlock .firstWrapper .dressBlock{
     grid-gap: 15px;
   }
   .shopBlock .secondWrapper .blockWithText {
-    grid-column-start: 1;
-    grid-column-end: -1;
+    grid-column: 1/-1;
     margin-bottom: 50px;
     margin-top: -10px;
   }
   .shopBlock .secondWrapper .dressBlock{
     grid-gap: 15px;
+  }
+  .footer .topBlock{
+    height: 350px;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+  }
+  .footer .topBlock div:nth-child(1){
+    grid-row: 1;
+    grid-column: 1/-1;
+  }
+  .footer .topBlock div:nth-child(2){
+    height: 100%;
+  }
+  .footer .topBlock div:nth-child(3){
+    height: 100%;
+  }
+  .footer .topBlock div:nth-child(4){
+    height: 40%;
+  }
+  .footer .topBlock div:nth-child(5){
+    display: grid;
+    height: 70%;
+    padding-right: 10%;
+  }
+  .footer .botLogo{
+    justify-self: center;
+    align-self: center;
+    margin-top: -20px;
   }
 }
 @media(max-width: 1024px){
@@ -615,26 +639,33 @@
     height: 60%;
     align-self: end;
   }
-  .header .dropMenu div{
+  .header .dropMenu ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
     height: 100%;
-    border: 0.3px solid #ccc;
+    border: 0.1px solid #ccc;
     color: #636363;
     grid-gap: 10px;
     margin-top: -1px;
   }
-  .header .dropMenu div span:first-child{
+  .header .dropMenu ul li:first-child{
     justify-self: end;
     font-size: 1.8em;
     font-weight: bold;
   }
-  .header .dropMenu div span:last-child{
+  .header .dropMenu ul li:last-child{
     align-self: center;
     margin-top: 2px;
     font-size: 16px;
     justify-self: start;
+  }
+  .header .dropMenu ul li{
+    list-style-type: none;
+  }
+  .footer .topBlock{
+    height: auto;
+    grid-template-columns:  repeat(auto-fill, minmax(208px,1fr));
   }
 }
 @media(max-width: 770px){
@@ -670,6 +701,15 @@
   }
   .header .dropMenu div span:last-child{
     font-size: 1em;
+  }
+}
+@media (max-width: 680px){
+  .footer .blockMail .sub{
+    margin-left: -10px;
+    width: 80px;
+  }
+  .footer .blockMail .email{
+    width: 170px;
   }
 }
 @media(max-width: 500px){
